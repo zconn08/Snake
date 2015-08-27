@@ -31,6 +31,7 @@
 			$(".end-screen").click(function(e){
 				$(".end-screen").css("display", "none");
 				$(".welcome-screen").css("display", "block");
+				$(".score-container").text("0")
 			})
     });
   </script>
@@ -46,33 +47,47 @@
 						<h1>Snake</h1>
 						<div class="snake-board">
 					    <div class="welcome-screen">
-								Levels
+								<div class="toungue-wrapper">
+									<img src="http://res.cloudinary.com/dmyvxexqn/image/upload/w_25,h_40/v1440699682/rp8pmvk49kqzqz7qnybq.gif" alt="snake-toungue" />
+								</div>
 					      <div class="start-buttons group">
-					        <div class="start-button easy">Easy</div>
-					        <div class="start-button medium">Medium</div>
-					        <div class="start-button hard">Hard</div>
+									<div class="start-button-wrapper">
+					        	<div class="start-button easy">Easy</div>
+									</div>
+									<div class="start-button-wrapper">
+					        	<div class="start-button medium">Medium</div>
+									</div>
+									<div class="start-button-wrapper">
+					        	<div class="start-button hard">Hard</div>
+									</div>
 					      </div>
-					      <div class="high-score-container">
+					      <!-- <div class="high-score-container">
 									High Score
 					        <span class="high-score">
-					          10
+					          0
 					        </span>
-					      </div>
+					      </div> -->
 					    </div> <!-- welcome-screen  -->
 							<div class="end-screen">
-					      <div class="restart-game-container">
-					        Game Over. Play again?
-					      </div>
+								<div class="toungue-wrapper-end">
+									<img src="http://res.cloudinary.com/dmyvxexqn/image/upload/w_25,h_40/v1440699682/rp8pmvk49kqzqz7qnybq.gif" alt="snake-toungue" />
+								</div>
+								<div class="end-button-wrapper">
+									<div class="end-button">Game Over</div>
+								</div>
+								<div class="end-button-wrapper">
+									<div class="end-button">Play Again?</div>
+								</div>
 					    </div> <!-- welcome-screen  -->
 
 					  </div>
-					  <div class="score-panel">
+					  <!-- <div class="score-panel">
 					    <div class="score-container">
 					      0
 					    </div>
-					  </div>
+					  </div> -->
 
-
+						<p>High Score: <span class="high-score">0</span> &nbsp;&bull;&nbsp; Current Score: <span class="score-container">0</span></p>
 						<p>Use the arrow keys to control &nbsp;&bull;&nbsp; Don't run into your tail &nbsp;&bull;&nbsp; Eat apples for points</p>
 						<!-- <nav>
 							<ul>

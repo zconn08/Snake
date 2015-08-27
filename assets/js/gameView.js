@@ -68,13 +68,11 @@
 
     View.prototype.run = function(){
       var that = this;
-      $(".score-panel").css("display", "block");
       var intervalId = setInterval(function(){
         if(!that.board.isOver()){
           that.step();
         } else {
           window.clearInterval(intervalId);
-          $(".score-panel").css("display", "none");
           $(".end-screen").css("display", "block");
           var currentHighScore = $(".high-score").text();
           if (that.score > parseInt(currentHighScore)) {

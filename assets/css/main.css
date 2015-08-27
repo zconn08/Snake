@@ -1061,26 +1061,14 @@ body {
   background: white;
   border: 1px solid black;
   box-sizing: border-box;
-  border-radius: 3px;
+  border-radius: 5px;
   margin: 0 auto;
 }
 
 .score-panel {
   width: 377px;
   height: 40px;
-  background: black;
   margin: 0 auto;
-	display: none;
-}
-
-.score-container {
-  margin: 0 auto;
-  height: 40px;
-  width: 70px;
-  background: white;
-  font-size: 34px;
-  text-align: center;
-	color: black;
 }
 
 .box {
@@ -1094,33 +1082,40 @@ body {
 
 .box.occupied {
   background: #89E07F;
+	border-radius: 5px;
+
 }
 
 .apple {
   background: red;
+	border-radius: 5px;
 }
 
-.start-button {
-	margin-top: 10px;
+.start-button, .end-button {
+	margin-bottom: 10px;
 	background-color: #89E07F;
-	/*border: 1px solid rgb(46, 109, 164);*/
-	border-radius: 3px;
+	border-radius: 5px;
 	box-sizing: border-box;
 	color: rgb(255, 255, 255);
-	display: inline-block;
-	font-size: 18px;
-	height: 35px;
+	font-size: 30px;
+	height: 90px;
+	width: 180px;
 	line-height: 20px;
-	margin-top: 10px;
 	padding-bottom: 6px;
 	padding-left: 12px;
 	padding-right: 12px;
 	padding-top: 6px;
 	text-align: center;
-
 	vertical-align: middle;
+	line-height: 75px;
+	margin-top: 10px;
+}
 
-	width: 240px;
+
+.start-button-wrapper, .end-button-wrapper {
+	margin: 0 auto;
+	height: 90px;
+	width: 180px;
 }
 
 .snake-header {
@@ -1146,10 +1141,47 @@ body {
 .end-screen {
 	width: 100%;
 	height: 100%;
-	background-color: #CE3134;
 	display: none;
+	border-radius: 3px;
 }
 
 .welcome-screen {
 	color: black;
+}
+
+.restart-game-container {
+	width: 220px;
+  height: 80px;
+  background-color: wheat;
+  border-radius: 10px;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.toungue-wrapper, .toungue-wrapper-end {
+	margin-top: 10px;
+	margin-bottom: -10px;
+}
+.toungue-wrapper-end {
+	margin-top: 60px;
+	transform: rotate(43deg);
+	margin-left: 10px;
+}
+
+.box.col-0.row-0 {
+	border-top-left-radius: 5px;
+}
+
+.box.col-14.row-0 {
+	border-top-right-radius: 5px;
+}
+
+.box.col-0.row-14 {
+	border-bottom-left-radius: 5px;
+}
+
+.box.col-14.row-14 {
+	border-bottom-right-radius: 5px;
 }
