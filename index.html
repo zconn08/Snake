@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<!--
+	Aerial by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Snake</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body class="loading">
+
+		<script src="./assets/js/jquery-2.1.1.js"></script>
+  <script src="./assets//js/snake.js"></script>
+  <script src="./assets//js/board.js"></script>
+  <script src="./assets//js/gameView.js"></script>
+
+  <script>
+    $(function(){
+      $(".start-button").click(function(e){
+        var difficulty = e.currentTarget.textContent
+        new SnakeGame.View($(".snake-board"), difficulty)
+        $(".welcome-screen").css("display", "none");
+      })
+			$(".end-screen").click(function(e){
+				$(".end-screen").css("display", "none");
+				$(".welcome-screen").css("display", "block");
+			})
+    });
+  </script>
+
+
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Snake</h1>
+						<div class="snake-board">
+					    <div class="welcome-screen">
+								Levels
+					      <div class="start-buttons group">
+					        <div class="start-button easy">Easy</div>
+					        <div class="start-button medium">Medium</div>
+					        <div class="start-button hard">Hard</div>
+					      </div>
+					      <div class="high-score-container">
+									High Score
+					        <div class="high-score">
+					          10
+					        </div>
+					      </div>
+					    </div> <!-- welcome-screen  -->
+							<div class="end-screen">
+					      <div class="restart-game-container">
+					        Game Over. Play again?
+					      </div>
+					    </div> <!-- welcome-screen  -->
+
+					  </div>
+					  <div class="score-panel">
+					    <div class="score-container">
+					      0
+					    </div>
+					  </div>
+
+
+						<p>Use the arrow keys to control &nbsp;&bull;&nbsp; Don't run into your tail &nbsp;&bull;&nbsp; Eat apples for points</p>
+						<!-- <nav>
+							<ul>
+								<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+								<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+								<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+							</ul>
+						</nav> -->
+					</header>
+
+				<!-- Footer -->
+					<!-- <footer id="footer">
+						<span class="copyright">&copy; Zachary Conn. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
+					</footer> -->
+
+			</div>
+		</div>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script>
+			window.onload = function() { document.body.className = ''; }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
+</html>
