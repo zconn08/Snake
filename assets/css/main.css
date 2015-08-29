@@ -1056,13 +1056,14 @@ body {
   background-color: #FAFAFA;
 }
 .snake-board {
-  width: 377px;
-  height: 377px;
+  width: 395px;
+  height: 395px;
   background: white;
   border: 1px solid black;
   box-sizing: border-box;
   border-radius: 5px;
   margin: 0 auto;
+	border: 10px solid #89E07F
 }
 
 .score-panel {
@@ -1083,12 +1084,13 @@ body {
 .box.occupied {
   background: #89E07F;
 	border-radius: 5px;
-
+	border: 1px solid black;
 }
 
 .apple {
   background: red;
 	border-radius: 5px;
+	border: 1px solid black;
 }
 
 .start-button, .end-button {
@@ -1096,26 +1098,34 @@ body {
 	background-color: #89E07F;
 	border-radius: 5px;
 	box-sizing: border-box;
-	color: rgb(255, 255, 255);
+	color: black;
 	font-size: 30px;
 	height: 90px;
-	width: 180px;
-	line-height: 20px;
+	width: 150px;
 	padding-bottom: 6px;
 	padding-left: 12px;
 	padding-right: 12px;
 	padding-top: 6px;
 	text-align: center;
 	vertical-align: middle;
-	line-height: 75px;
 	margin-top: 10px;
+	border: 5px solid black;
+	font-weight: bold;
+}
+
+.end-button {
+	line-height: 33px;
+}
+
+.start-button {
+	line-height: 75px;
 }
 
 
 .start-button-wrapper, .end-button-wrapper {
 	margin: 0 auto;
 	height: 90px;
-	width: 180px;
+	width: 150px;
 }
 
 .snake-header {

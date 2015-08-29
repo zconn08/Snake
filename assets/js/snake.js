@@ -12,7 +12,7 @@
   };
 
   Snake.prototype.isSnakePresent = function(pos){
-    var present = false
+    var present = false;
     this.segments.forEach(function(segment){
       if (segment[0] === pos[0] && segment[1] === pos[1]) {
         present = true;

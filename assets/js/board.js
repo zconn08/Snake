@@ -48,7 +48,7 @@
     if (this.growTurns === 0) {
       this.snake.segments.pop();
     } else {
-      this.growTurns -= 1
+      this.growTurns -= 1;
     }
     var first = this.snake.segments[0];
     var diff = Board.MOVE_DIFFS[this.snake.dir];
