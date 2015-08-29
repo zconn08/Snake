@@ -18,6 +18,6 @@ Running into your tail will end the game
 
 
 [start]: ./assets/pictures/welcome.png
-[easy]: ./assets/pictures/easy.gif
-[hard]: ./assets/pictures/hard.gif
+[easy]: ./assets/pictures/Easy.gif
+[hard]: ./assets/pictures/Hard.gif
 [gameover]: ./assets/pictures/gameover.gif
