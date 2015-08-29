@@ -1,14 +1,7 @@
-<<<<<<< HEAD
-(function(){
-    var SnakeGame = window.SnakeGame = window.SnakeGame || {};
-
-    var View = SnakeGame.View = function($el, difficulty){
-=======
 (function () {
     var SnakeGame = window.SnakeGame = window.SnakeGame || {};
 
     var View = SnakeGame.View = function ($el, difficulty) {
->>>>>>> gh-pages
       this.board = new SnakeGame.Board();
       this.$el = $el;
       this.difficulty = difficulty;
@@ -16,10 +9,7 @@
       this.setUpView();
       this.run();
       this.score = 0;
-<<<<<<< HEAD
-=======
       this.turning = false;
->>>>>>> gh-pages
     };
 
     View.DIFFICULTY_LEVELS = {
@@ -31,16 +21,6 @@
     View.prototype.bindListener = function () {
       var that = this;
       $(document).keydown(function(e){
-<<<<<<< HEAD
-        if (e.keyCode === 37 && that.board.snake.dir !== "E"){
-          that.board.snake.dir = "W";
-        } else if (e.keyCode === 38 && that.board.snake.dir !== "S"){
-          that.board.snake.dir = "N";
-        } else if (e.keyCode === 39 && that.board.snake.dir !== "W"){
-          that.board.snake.dir = "E";
-        } else if (e.keyCode === 40 && that.board.snake.dir !== "N"){
-          that.board.snake.dir = "S";
-=======
         if (!that.turning) {
           if (e.keyCode === 37 && that.board.snake.dir !== "E"){
             that.board.snake.dir = "W";
@@ -55,7 +35,6 @@
             that.board.snake.dir = "S";
             that.turning = true;
           }
->>>>>>> gh-pages
         }
       });
     };
@@ -98,10 +77,7 @@
       var that = this;
       var intervalId = setInterval(function(){
         if(!that.board.isOver()){
-<<<<<<< HEAD
-=======
           that.turning = false;
->>>>>>> gh-pages
           that.step();
         } else {
           window.clearInterval(intervalId);
@@ -114,11 +90,7 @@
         }
       },
       View.DIFFICULTY_LEVELS[this.difficulty]);
-<<<<<<< HEAD
-    }
-=======
     };
->>>>>>> gh-pages
 
     View.prototype.setUpView = function () {
       var $board = this.$el;
