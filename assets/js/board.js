@@ -48,7 +48,11 @@
     if (this.growTurns === 0) {
       this.snake.segments.pop();
     } else {
+<<<<<<< HEAD
       this.growTurns -= 1
+=======
+      this.growTurns -= 1;
+>>>>>>> gh-pages
     }
     var first = this.snake.segments[0];
     var diff = Board.MOVE_DIFFS[this.snake.dir];

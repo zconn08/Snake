@@ -1056,13 +1056,22 @@ body {
   background-color: #FAFAFA;
 }
 .snake-board {
+<<<<<<< HEAD
   width: 377px;
   height: 377px;
+=======
+  width: 395px;
+  height: 395px;
+>>>>>>> gh-pages
   background: white;
   border: 1px solid black;
   box-sizing: border-box;
   border-radius: 5px;
   margin: 0 auto;
+<<<<<<< HEAD
+=======
+	border: 10px solid #89E07F
+>>>>>>> gh-pages
 }
 
 .score-panel {
@@ -1083,12 +1092,20 @@ body {
 .box.occupied {
   background: #89E07F;
 	border-radius: 5px;
+<<<<<<< HEAD
 
+=======
+	border: 1px solid black;
+>>>>>>> gh-pages
 }
 
 .apple {
   background: red;
 	border-radius: 5px;
+<<<<<<< HEAD
+=======
+	border: 1px solid black;
+>>>>>>> gh-pages
 }
 
 .start-button, .end-button {
@@ -1096,26 +1113,51 @@ body {
 	background-color: #89E07F;
 	border-radius: 5px;
 	box-sizing: border-box;
+<<<<<<< HEAD
 	color: rgb(255, 255, 255);
 	font-size: 30px;
 	height: 90px;
 	width: 180px;
 	line-height: 20px;
+=======
+	color: black;
+	font-size: 30px;
+	height: 90px;
+	width: 150px;
+>>>>>>> gh-pages
 	padding-bottom: 6px;
 	padding-left: 12px;
 	padding-right: 12px;
 	padding-top: 6px;
 	text-align: center;
 	vertical-align: middle;
+<<<<<<< HEAD
 	line-height: 75px;
 	margin-top: 10px;
+=======
+	margin-top: 10px;
+	border: 5px solid black;
+	font-weight: bold;
+}
+
+.end-button {
+	line-height: 33px;
+}
+
+.start-button {
+	line-height: 75px;
+>>>>>>> gh-pages
 }
 
 
 .start-button-wrapper, .end-button-wrapper {
 	margin: 0 auto;
 	height: 90px;
+<<<<<<< HEAD
 	width: 180px;
+=======
+	width: 150px;
+>>>>>>> gh-pages
 }
 
 .snake-header {
