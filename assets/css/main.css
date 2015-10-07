@@ -172,10 +172,10 @@
 /* BG */
 
 	#bg {
-		-moz-animation: bg 60s linear infinite;
-		-webkit-animation: bg 60s linear infinite;
-		-ms-animation: bg 60s linear infinite;
-		animation: bg 60s linear infinite;
+		-moz-animation: bg 0s linear infinite;
+		-webkit-animation: bg 0s linear infinite;
+		-ms-animation: bg 0s linear infinite;
+		animation: bg 0s linear infinite;
 		-moz-backface-visibility: hidden;
 		-webkit-backface-visibility: hidden;
 		-ms-backface-visibility: hidden;
@@ -307,10 +307,10 @@
 	}
 
 	#overlay {
-		-moz-animation: overlay 1.5s 1.5s forwards;
-		-webkit-animation: overlay 1.5s 1.5s forwards;
-		-ms-animation: overlay 1.5s 1.5s forwards;
-		animation: overlay 1.5s 1.5s forwards;
+		-moz-animation: overlay 0s 0s forwards;
+		-webkit-animation: overlay 0s 0s forwards;
+		-ms-animation: overlay 0s 0s forwards;
+		animation: overlay 0s 0s forwards;
 		background-attachment: fixed, fixed;
 		background-image: url("images/overlay-pattern.png"), url("images/overlay.svg");
 		background-position: top left, center center;
@@ -492,6 +492,7 @@
 	}
 
 	#header {
+		margin-top: 15px;
 		-moz-animation: header 1s 2.25s forwards;
 		-webkit-animation: header 1s 2.25s forwards;
 		-ms-animation: header 1s 2.25s forwards;
